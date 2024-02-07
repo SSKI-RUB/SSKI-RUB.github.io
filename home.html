@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <title>FactSpot</title>
+
+    <style>
+        #mid-div {
+            background-color: #E0F2F1;
+        }
+
+        .pink_span1 {
+            background-color: #f56eb1;
+        }
+
+        .blue_span1 {
+            background-color: #6de7f2;
+        }
+    </style>
+
+    <!--
+        .modal-dialog {
+            position: fixed;
+            top: 1%;
+            right: auto;
+            left: 15%;
+            bottom: auto;
+            float: none;
+            text-align: left;
+        }
+    -->
+
+</head>
+
+<body id="mid-div">
+
+
+<!-- main fluid-container -->
+<div class="container">
+
+    <div class="row">
+
+
+        <!-- linke Spalte -->
+        <div class="col-1">
+
+        </div>
+
+        <!-- Hauptspalte mitte -->
+        <div class="col-10">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-lightshadow-sm bg-white rounded">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                         class="bi bi-eye-fill ms-2" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                    </svg>
+                    FactSpot</a>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="notifications.html">Notifications</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">Messages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookmarks.html">Bookmarks</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Center Container for Articles -->
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card mt-5 shadow-sm bg-white rounded">
+                            <h6 class="card-header">
+                                Analyze Your Own Article
+                            </h6>
+                            <div class="card-body">
+                                <div class="row">
+                                    <label for="basic-url" class="form-label"></label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                              id="basic-addon3">Paste your own URL here</span>
+                                        <input type="text" class="form-control" id="basic-url"
+                                               aria-describedby="basic-addon3">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="">
+                                            <button type="button" class="btn btn-secondary shadow" disabled>
+                                                Analyze
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <!-- Card for Articles -->
+                        <div class="card mt-5 shadow-sm bg-white rounded">
+                            <h6 class="card-header">
+                                J&J says its psoriasis drug superior to Novartis treatment in study
+                            </h6>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            Outlet:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            Reuters
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            AI Output:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            <b>Untruthful Content</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="article_1.html">
+                                            <button type="button" class="btn btn-secondary shadow">
+                                                Read Article
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <!-- Card for Articles -->
+                        <div class="card mt-5 shadow-sm bg-white rounded">
+                            <h6 class="card-header">
+                                J&J says its psoriasis drug superior to Novartis treatment in study
+                            </h6>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            Outlet:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            Reuters
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            AI Output:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            <b>Untruthful Content</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary shadow">
+                                            Read Article
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <!-- Card for Articles -->
+                        <div class="card mt-5 shadow-sm bg-white rounded">
+                            <h6 class="card-header">
+                                J&J says its psoriasis drug superior to Novartis treatment in study
+                            </h6>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            Outlet:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            Reuters
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            AI Output:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            <b>Untruthful Content</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary shadow">
+                                            Read Article
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <!-- Card for Articles -->
+                        <div class="card mt-5 shadow-sm bg-white rounded">
+                            <h6 class="card-header">
+                                J&J says its psoriasis drug superior to Novartis treatment in study
+                            </h6>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            Outlet:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            Reuters
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="text-start">
+                                            AI Output:
+                                        </p>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <p class="text-start">
+                                            <b>Untruthful Content</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary shadow">
+                                            Read Article
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- rechte Spalte -->
+        <div class="col-1">
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
