@@ -23,6 +23,29 @@
         .blue_span1 {
             background-color: #6de7f2;
         }
+        .compact-card {
+            margin-bottom: 10px; /* Reduce bottom margin if necessary */
+            height: auto; /* Ensures the card height only fits content */
+        }
+
+        .centered-light-text {
+            text-align: center; /* Centers the text horizontally */
+            color: #ffffff; /* Light grey text color for a light appearance */
+            font-weight: 300; /* Lighter font weight */
+        }
+
+        .custom-font-size-read{
+            font-size: 15px;
+            font-style: italic
+        }
+        p.custom-justify{
+            text-align: justify;
+            /* text-justify: inter-word; Verbessert die Wortabstände */
+            hyphens: auto;
+            word-spacing: 5px; 
+            margin-bottom: 2px; 
+            line-height: 1.2
+        }
     </style>
 
     <!--
@@ -161,7 +184,10 @@
 
                                     <div class="col-4">
                                         <p class="text-center">
-                                            <b>Untruthful Content</b>
+                                            <b>Untruthful Content&nbsp;&nbsp;</b>
+                                        
+                                        <img src="ampel_rot.png" class="img-fluid" alt="Responsive image"
+                                             style="max-width: 18%">
                                         </p>
                                     </div>
                                 </div>
@@ -174,13 +200,22 @@
                                     </p>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 10px">
                                     <div class="col">
                                         <a href="article_1.html">
                                             <button type="button" class="btn btn-secondary shadow">
                                                 Read Article
                                             </button>
                                         </a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary shadow" data-bs-toggle="modal" 
+                                            data-bs-target="#staticArticles">
+                                                Additional Articles
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +253,9 @@
 
                                     <div class="col-4">
                                         <p class="text-center">
-                                            <b>Untruthful Content</b>
+                                            <b>Untruthful Content&nbsp;&nbsp;</b>
+                                            <img src="ampel_rot.png" class="img-fluid" alt="Responsive image"
+                                             style="max-width: 18%">
                                         </p>
                                     </div>
                                 </div>
@@ -231,11 +268,19 @@
                                     </p>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 10px">
                                     <div class="col">
                                         <button type="button" class="btn btn-secondary shadow">
                                             Read Article
-                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="">
+                                            <button type="button" class="btn btn-secondary shadow">
+                                                Additional Articles
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +318,10 @@
 
                                     <div class="col-4">
                                         <p class="text-center">
-                                            <b>Truthful Content</b>
+                                            <b>Truthful Content&nbsp;&nbsp;</b>
+                                            
+                                            <img src="ampel_grün.png" class="img-fluid" alt="Responsive image"
+                                             style="max-width: 18%"></b>
                                         </p>
                                     </div>
                                 </div>
@@ -286,11 +334,21 @@
                                     </p>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 10px"
+                                >
                                     <div class="col">
                                         <button type="button" class="btn btn-secondary shadow">
                                             Read Article
                                         </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="">
+                                            <button type="button" class="btn btn-secondary shadow">
+                                                Additional Articles
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +386,10 @@
 
                                     <div class="col-4">
                                         <p class="text-center">
-                                            <b>Truthful Content</b>
+                                            <b>Truthful Content&nbsp;&nbsp;</b>
+                                            
+                                            <img src="ampel_grün.png" class="img-fluid" alt="Responsive image"
+                                             style="max-width: 18%"></b>
                                         </p>
                                     </div>
                                 </div>
@@ -341,11 +402,20 @@
                                     </p>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 10px">
                                     <div class="col">
                                         <button type="button" class="btn btn-secondary shadow">
                                             Read Article
                                         </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="">
+                                            <button type="button" class="btn btn-secondary shadow">
+                                                Additional Articles
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -563,6 +633,943 @@
         <!-- rechte Spalte -->
         <div class="col-1">
 
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticArticles" data-bs-backdrop="static"
+     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1"
+     aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel1">Tracing the information discussed within the analyzed
+                    article</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="card-text">
+                    <!--<div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-3"><h6>Date</h6></div>
+                        <div class="col-2"><h6>Polarity</h6></div>
+                        <div class="col-3"><h6>Assigned topic</h6></div>
+                        <div class="col-3"><h6>Source</h6></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="bi bi-arrow-down"></i></div>
+                        <div class="col-3">December 12th</div>
+                        <div class="col-2">Positive</div>
+                        <div class="col-3">Business</div>
+                        <div class="col-3">Healthworld (The Economist)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="bi bi-arrow-down"></i></div>
+                        <div class="col-3">December 12th</div>
+                        <div class="col-2">Neutral</div>
+                        <div class="col-3">Health</div>
+                        <div class="col-3">Janssen Immunology</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="bi bi-arrow-down"></i></div>
+                        <div class="col-3">September 20th</div>
+                        <div class="col-2">Neutral</div>
+                        <div class="col-3">Health</div>
+                        <div class="col-3">Clinical Trials (U.S. National Library of Medicine)</div>
+                    </div>-->
+
+                <div class="row">
+
+                    <!-- <div class="col-1">
+                        <i class="bi bi-arrow-down"></i>
+                    </div>
+
+                    <div class="col-3">
+                        December 12th
+                    </div> -->
+
+                    <!-- <div class="col"> -->
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample1" aria-expanded="false"
+                                    aria-controls="collapseExample1">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="row">
+                                                <p style="text-align: left; margin-bottom: 0px; font-size: 12px; "> Healthworld &bull; Manogna Maddipatla et al. (2018)</p>
+                                            </div>
+
+                                            <div class="row custom-justify">
+                                                <p style="text-align: justify; margin-bottom: 2px; font-size: 20px;"> J&J says its psoriasis drug superior to Novartis' in study</p>                         
+                                            </div>
+                                        </div>
+
+                                        <div class="col-2 custom-font-size-read text-center align-items-center d-flex justify-content-center">
+                                            Read Article
+                                        </div>
+                                    </div>
+                            </button>
+                        </div>                        
+                    <!-- </div> -->
+                    
+                    
+
+
+                    <p>
+                    <div class="collapse" id="collapseExample1">
+                        
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="card card-body">
+                                    <!-- J&J says its psoriasis drug superior to Novartis' in study
+                                    <br><br> -->
+                                    The study involving 1,048 participants showed Tremfya was superior to Novartis'
+                                    Cosentyx in
+                                    reducing the severity and area of the body affected by the condition, which causes
+                                    dry,
+                                    flaky and itchy skin patches, J&J said.
+                                    <br><br>
+                                    Johnson & Johnson said on Wednesday its drug Tremfya was more effective than a rival
+                                    medicine from Novartis AG, and met the main goal of a late-stage study in adults
+                                    with
+                                    moderate to severe plaque psoriasis.
+                                    <br><br>
+                                    The study involving 1,048 participants showed Tremfya was superior to Novartis'
+                                    Cosentyx in
+                                    reducing the severity and area of the body affected by the condition, which causes
+                                    dry,
+                                    flaky and itchy skin patches, J&J said.
+                                    <br><br>
+                                    After 48 weeks of therapy, 84.5 percent of the patients treated with Tremfya showed
+                                    90
+                                    percent improvement in disease symptoms, as measured by the Psoriasis Area Severity
+                                    Index
+                                    (PASI), while only 70 percent of those treated with Cosentyx showed similar results.
+                                    <br><br>
+                                    However, J&J said Tremfya was not superior to Cosentyx in demonstrating quicker
+                                    effectiveness.
+                                    <br><br>
+                                    "Results of the study confirm a slightly more rapid onset of response with provide
+                                    new
+                                    insights into comparative longer-term efficacy," Richard Langley, lead investigator
+                                    of the
+                                    study, said.
+                                    <br><br>
+                                    Psoriasis is a chronic skin condition that causes an overproduction of skin cells,
+                                    resulting
+                                    in inflamed, red lesions or plaques, which can be itchy and painful.
+                                    <br><br>
+                                    About 7.5 million Americans live with plaque psoriasis, of which 20 percent have
+                                    moderate to
+                                    severe form of the disease, the company said.
+                                    <br><br>
+                                    Tremfya, first approved in July 2017 as a plaque psoriasis treatment in the U.S., is
+                                    also
+                                    being tested as a treatment for psoriatic arthritis and Crohn's disease.
+                                    <br><br>
+                                    Cosentyx, which has been approved in the U.S. for plaque psoriasis, scalp psoriasis
+                                    and
+                                    psoriatic arthritis, is a key sales driver which raked in $2.1 billion for the
+                                    drugmaker in
+                                    2017.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+
+                <div class="row">
+
+                    <!-- <div class="col-1">
+                        <i class="bi bi-arrow-down"></i>
+                    </div>
+
+                    <div class="col-3">
+                        December 12th
+                    </div> -->
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false"
+                            aria-controls="collapseExample2">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <p style="text-align: left; margin-bottom: 0px; font-size: 12px;"> Janssen Immunology &bull; Kellie McLaughlin & Megan Farina (2018)</p>
+                                        </div>
+
+                                        <div class="row custom-justify">
+                                            <p style="text-align: justify; margin-bottom: 2px; font-size: 20px; line-height: 1.2;"> New Phase 3 data demonstrate superiority of TREMFYA (guselkumab) vs Cosentyx (secukinumab) in delivering PASI 90 responses in the treatment of moderate to severe plaque psoriasis at week 48</p>                         
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 custom-font-size-read text-center align-items-center d-flex justify-content-center custom-justify">
+                                        Read Article
+                                    </div>
+                                </div>
+                        </button>
+                    </div>
+
+                    <!-- <div class="col-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample2" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                
+                                    <div class="row">
+                                        <p style="text-align: center; margin-bottom: 5px; font-size: 20px;"> 
+                                            New Phase 3 data demonstrate superiority of TREMFYA (guselkumab) vs Cosentyx (secukinumab) in delivering PASI 90 responses in the treatment of moderate to severe plaque psoriasis at week 48
+                                        </p>                         
+                                     </div>
+ 
+                                     <div class="row">
+                                         <div class="col-6">
+                                             <div class="card compact-card">
+                                                <div class="row">
+                                                    <div class="col-3" style="margin: 5px">
+                                                        Authors:
+                                                    </div>
+                                                    <div class="col-7" style="margin: 5px">
+                                                        Kellie McLaughlin, ...
+                                                    </div>
+                                                </div>
+                                             </div>
+                                         </div>
+ 
+                                         <div class="col-6">
+                                             <div class="card compact-card">                                
+                                                 <div class="col-12" style="margin: 5px">
+                                                     Outlet: Janssen Immunology
+                                                 </div>                                                 
+                                             </div>
+                                         </div>                                
+                                     </div>
+                                
+                            </button>
+                        </div>
+                    </div> -->
+
+                    <p>
+                    <div class="collapse" id="collapseExample2">
+
+                        <!-- <div class="row">
+                            <div class="col-6">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Authors:
+                                        </div>
+
+                                        <div class="col-6">
+                                            Kellie McLaughlin, Megan Farina
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Outlet:
+                                        </div>
+
+                                        <div class="col-6">
+                                            Janssen Immunology
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-12">
+
+
+                                <div class="card card-body">
+                                    <!-- New Phase 3 data demonstrate superiority of TREMFYA (guselkumab) vs Cosentyx
+                                    (secukinumab)
+                                    in
+                                    delivering PASI 90 responses in the treatment of moderate to severe plaque psoriasis
+                                    at week
+                                    48
+                                    <br><br> -->
+                                    84.5 percent of patients receiving TREMFYA achieved the primary endpoint of a PASI
+                                    90
+                                    response
+                                    at week 48 compared with 70.0 percent of patients receiving Cosentyx
+                                    <br><br>
+                                    ECLIPSE is the first Phase 3 head-to-head study to compare efficacy between the
+                                    first-in-class
+                                    IL-23 inhibitor, TREMFYA, and the IL-17 inhibitor, Cosentyx
+                                    <br><br>
+                                    The Janssen Pharmaceutical Companies of Johnson & Johnson today announced results
+                                    from the
+                                    ECLIPSE study demonstrating that TREMFYA (guselkumab) was superior to Cosentyx
+                                    (secukinumab)* in
+                                    treating adults with moderate to severe plaque psoriasis for the primary endpoint
+                                    assessed
+                                    at
+                                    week 48. Data from the multi-center, randomized, double-blind head-to-head Phase 3
+                                    study
+                                    demonstrated that 84.5 percent of patients treated with TREMFYA achieved at least 90
+                                    percent
+                                    improvement in their baseline Psoriasis Area Severity Index (PASI) score at week 48,
+                                    compared
+                                    with 70.0 percent of patients treated with Cosentyx (p<0.001).
+                                    <br><br>
+                                    These data, to be presented at the 3 Inflammatory Skin Disease Summit in Vienna,
+                                    December
+                                    12-15,
+                                    mark the first-ever results from a head-tohead study comparing an interleukin
+                                    (IL)-23-targeted
+                                    biologic therapy (TREMFYA) with an IL-17 inhibitor (Cosentyx). ECLIPSE is Janssen’s
+                                    fourth
+                                    TREMFYA Phase 3 study in plaque psoriasis and is part of a comprehensive clinical
+                                    development
+                                    program that also includes ongoing Phase 3 studies in psoriatic arthritis and
+                                    Crohn’s
+                                    disease.
+                                    <br><br>
+                                    ECLIPSE incorporated six major secondary endpoints that used a fixed statistical
+                                    sequence
+                                    procedure to control for multiple comparisons and included both shorter and
+                                    longer-term
+                                    analyses. TREMFYA demonstrated non-inferiority to Cosentyx in the first major
+                                    secondary
+                                    endpoint, with 84.6 percent of patients on TREMFYA achieving a PASI 75 response at
+                                    both
+                                    weeks 12
+                                    and 48 vs. 80.2 percent of those on Cosentyx (p<0.001), however, it did not
+                                    demonstrate
+                                    superiority (p=0.062). Because superiority was not demonstrated for the first major
+                                    secondary
+                                    endpoint, pvalues for all the subsequent major secondary endpoints were considered
+                                    nominal.
+                                    <br><br>
+                                    Three of the remaining major secondary endpoints evaluated efficacy at week 48,
+                                    including
+                                    achievement of a PASI 100 response and Investigator’s Global Assessment (IGA) scores
+                                    of 0
+                                    (cleared), or 0 or 1 (cleared or minimal disease). At week 48, 58.2 percent of
+                                    patients
+                                    receiving TREMFYA achieved a PASI 100 response, compared with 48.4 percent of
+                                    patients
+                                    receiving
+                                    Cosentyx; 62.2 percent of patients receiving TREMFYA achieved an IGA score of 0
+                                    compared to
+                                    50.4
+                                    percent of patients receiving Cosentyx; and 85.0 percent of patients receiving
+                                    TREMFYA
+                                    achieved
+                                    an IGA score of 0 or 1 compared to 74.9 percent of patients receiving Cosentyx (all
+                                    comparisons
+                                    with nominal p≤ 0.001).
+                                    <br><br>
+                                    The remaining major secondary endpoints assessed non-inferiority of TREMFYA versus
+                                    Cosentyx
+                                    at
+                                    week 12. The percentage of patients achieving a PASI 75 response at week 12 was 89.3
+                                    percent
+                                    for
+                                    TREMFYA and 91.6 percent for Cosentyx (p<0.001 for non-inferiority); the percentage
+                                    of
+                                    patients
+                                    achieving a PASI 90 response at week 12 was 69.1 percent for TREMFYA and 76.1
+                                    percent for
+                                    Cosentyx (p=0.127 for non-inferiority).
+                                    <br><br>
+                                    “The response-over-time curves show that maximum response rates with TREMFYA are
+                                    achieved
+                                    after
+                                    six months and are maintained over time through one year, achieving superiority at
+                                    the
+                                    primary
+                                    endpoint of the study,” said lead study investigator Richard Langley, M.D., FRCPC,
+                                    Professor,
+                                    Division of Clinical Dermatology & Cutaneous Science, Department of Medicine,
+                                    Dalhousie
+                                    University. “Results of the study confirm a slightly more rapid onset of response
+                                    with
+                                    Cosentyx,
+                                    but importantly, in a chronic disease like psoriasis, these data provide new
+                                    insights into
+                                    comparative longer-term efficacy.”
+                                    <br><br>
+                                    Through week 44, 27 patients (5.1 percent) randomized to the TREMFYA arm
+                                    discontinued
+                                    treatment
+                                    compared with 48 patients (9.3 percent) randomized to the Cosentyx arm.
+                                    <br><br>
+                                    The safety profiles observed for TREMFYA and Cosentyx in ECLIPSE were consistent
+                                    with the
+                                    known
+                                    safety profiles seen in the respective registration trials and current prescribing
+                                    information.
+                                    Similar percentages of patients receiving TREMFYA (77.9 percent), and Cosentyx (81.6
+                                    percent)
+                                    reported at least one adverse event (AE). Serious AEs were reported in 6.2 percent
+                                    of
+                                    patients
+                                    receiving TREMFYA and 7.2 percent of patients receiving Cosentyx. Serious infections
+                                    occurred in
+                                    six patients receiving TREMFYA and five patients receiving Cosentyx.
+                                    <br><br>
+                                    “Fortunately for patients, there are many good treatment options available for
+                                    plaque
+                                    psoriasis
+                                    today. However, to make the best recommendation for their patients from among these
+                                    options,
+                                    physicians need long term comparative safety and efficacy data. We’re proud to have
+                                    conducted
+                                    this important trial to help guide clinical practice and continue to build on the
+                                    robust
+                                    database of clinical information that we’ve been able to generate on TREMFYA, the
+                                    first
+                                    IL-23
+                                    inhibitor,” said Newman Yeilding, M.D., Head of Immunology Development, Janssen
+                                    Research &
+                                    Development, LLC.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <!-- <div class="col-1">
+                        <i class="bi bi-arrow-down"></i>
+                    </div>
+
+                    <div class="col-3">
+                        September 20th
+                    </div> -->
+
+                    <!-- <div class="col-12">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample3" aria-expanded="false"
+                                    aria-controls="collapseExample3">
+                                Show the traced information from U.S. National Library of Medicine
+                            </button>
+                        </div>
+                    </div> -->
+
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false"
+                            aria-controls="collapseExample3">
+
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <p style="text-align: left; margin-bottom: 0px; font-size: 12px;"> 
+                                                U.S. National Library of Medicine &bull; Kristian Reich et al. (2018)
+                                            </p>
+                                        </div>
+
+                                        <div class="row custom-justify">
+                                            <p style="text-align: justify; margin-bottom: 2px; font-size: 20px; hyphens: auto; line-height: 1.2;">
+                                                A Study to Evaluate the Comparative Efficacy of CNTO 1959 (Guselkumab) and Secukinumab for the Treatment of Moderate to Severe Plaque-type Psoriasis (ECLIPSE) 
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 custom-font-size-read text-center align-items-center d-flex justify-content-center">
+                                        Read Article
+                                    </div>
+                                </div>
+                        </button>
+                    </div>
+
+
+                    <p>
+                    <div class="collapse" id="collapseExample3">
+
+                        <!-- <div class="row">
+                            <div class="col-6">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Authors:
+                                        </div>
+
+                                        <div class="col-6">
+                                            Kristian Reich, April W. Armstrong, Richard G. Langley, Susan Flavin, Bruce
+                                            Randazzo, Shu Li, Ming-Chun Hsu, Patrick Branigan, Andrew Blauvelt
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Outlet:
+                                        </div>
+
+                                        <div class="col-6">
+                                            U.S. National Library of Medicine
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-12">
+
+
+                                <div class="card card-body">
+                                    A Study to Evaluate the Comparative Efficacy of CNTO 1959 (Guselkumab) and
+                                    Secukinumab for
+                                    the
+                                    Treatment of Moderate to Severe Plaque-type Psoriasis (ECLIPSE)
+                                    <br><br>
+                                    The study consists of Screening Phase(4 weeks before administration of study
+                                    drug),Active
+                                    Treatment Phase(Week 0-Week 44),Follow Up Phase(Week 44-Week 56).During various
+                                    study
+                                    periods,safety assessments(example[e.g] recording of adverse events,Vital
+                                    signs,Tuberculosis
+                                    evaluation,Chest radiograph,Urine pregnancy Test);Efficacy assessments(e.g
+                                    IGA,PASI);Clinical
+                                    Laboratory Assessments(e.g haematology,chemistry);Biomarkers/Genetic
+                                    evaluations,will be
+                                    performed per the study procedures.The primary hypotheses are that guselkumab
+                                    treatment is
+                                    non-inferior to secukinumab as assessed by proportion of participants achieving PASI
+                                    90
+                                    response
+                                    at Week 48 with noninferiority margin of 10% and,once non-inferiority is
+                                    established,that
+                                    guselkumab is superior to secukinumab as assessed by proportion of participants
+                                    achieving
+                                    PASI
+                                    90 response at Week 48.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a Psoriasis Area and Severity Index
+                                    (PASI)-90
+                                    Response
+                                    at Week 48 [ Time Frame: Week 48 ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions. In
+                                    the
+                                    PASI system, the body is divided into 4 regions: the head, trunk, upper extremities,
+                                    and
+                                    lower
+                                    extremities. Each of these areas were assessed separately for the percentage of the
+                                    area
+                                    involved, which translates to a numeric score that ranges from 0 to 6, and for
+                                    erythema,
+                                    induration, and scaling, which are each rated on a scale of 0 to 4. The PASI
+                                    produces a
+                                    numeric
+                                    score that can range from 0 to 72. A higher score indicates more severe disease. A
+                                    PASI 90
+                                    response represents participants who achieved at least a 90 percent improvement from
+                                    baseline in
+                                    the PASI score.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-75 Response at Both Week 12 and 48 [
+                                    Time
+                                    Frame:
+                                    Week 12 and 48 ]
+                                    <br>
+                                    Percentage of participants who achieved PASI-75 response at both Week 12 and 48 was
+                                    reported.
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 75
+                                    response was defined as at least a 75% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-90 Response at Week 12 [ Time Frame:
+                                    Week 12
+                                    ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 90
+                                    response was defined as at least a 90% reduction in PASI relative to baseline. Due
+                                    to
+                                    failing to
+                                    achieve superiority of prior secondary endpoint, no formal statistical testing was
+                                    performed
+                                    for
+                                    endpoints from this point onwards.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-75 Response at Week 12 [ Time Frame:
+                                    Week 12
+                                    ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 75
+                                    response was defined as at least a 75% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-100 Response at Week 48 [ Time Frame:
+                                    Week 48
+                                    ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 100
+                                    response was defined as 100% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants With Investigator's Global Assessment (IGA) Score Cleared
+                                    (0) at
+                                    Week
+                                    48 [ Time Frame: Week 48 ]
+                                    <br>
+                                    The IGA documents the investigator's assessment of the participant's psoriasis at a
+                                    given
+                                    time
+                                    point. Overall lesions are graded for induration, erythema, and scaling. The
+                                    participant's
+                                    psoriasis is assessed as cleared (0), minimal (1), mild (2), moderate (3), or severe
+                                    (4).
+                                    <br><br>
+                                    Percentage of Participants With Investigator's Global Assessment (IGA) Score Cleared
+                                    (0) or
+                                    Minimal (1) at Week 48 [ Time Frame: Week 48 ]
+                                    <br>
+                                    The IGA documents the investigator's assessment of the participant's psoriasis at a
+                                    given
+                                    time
+                                    point. Overall lesions are graded for induration, erythema, and scaling. The
+                                    participant's
+                                    psoriasis is assessed as cleared (0), minimal (1), mild (2), moderate (3), or severe
+                                    (4).
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-90 Response at Both Week 16 and 48 [
+                                    Time
+                                    Frame:
+                                    Week 16 and 48 ]
+                                    <br>
+                                    Percentage of participants who achieved PASI-90 response at both Week 16 and 48 was
+                                    reported.
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 90
+                                    response was defined as at least a 90% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-75 Response at Week 16 [ Time Frame:
+                                    Week 16
+                                    ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 75
+                                    response was defined as at least a 75% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-90 Response at Week 16 [ Time Frame:
+                                    Week 16
+                                    ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 90
+                                    response was defined as at least a 90% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved a PASI-90 Response at All 7 Visits From Week
+                                    24
+                                    Through
+                                    Week 48 [ Time Frame: Week 24 up to Week 48 ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 90
+                                    response was defined as at least a 90% reduction in PASI relative to baseline.
+                                    Percentage of
+                                    participants who achieved a PASI-90 response at all 7 visits from Week 24 to 48
+                                    (Week 24,
+                                    28,
+                                    32, 36, 40, 44 and 48) was reported.
+                                    <br><br>
+                                    Percentage of Participants With Investigator's Global Assessment (IGA) Score Cleared
+                                    (0) or
+                                    Minimal (1) at Week 16 [ Time Frame: Week 16 ]
+                                    <br>
+                                    The IGA documents the investigator's assessment of the participant's psoriasis at a
+                                    given
+                                    time
+                                    point. Overall lesions are graded for induration, erythema, and scaling. The
+                                    participant's
+                                    psoriasis is assessed as cleared (0), minimal (1), mild (2), moderate (3), or severe
+                                    (4).
+                                    <br><br>
+                                    Percentage of Participants With Investigator's Global Assessment (IGA) Score Cleared
+                                    (0) or
+                                    Minimal (1) at Week 12 [ Time Frame: Week 12 ]
+                                    <br>
+                                    The IGA documents the investigator's assessment of the participant's psoriasis at a
+                                    given
+                                    time
+                                    point. Overall lesions are graded for induration, erythema, and scaling. The
+                                    participant's
+                                    psoriasis is assessed as cleared (0), minimal (1), mild (2), moderate (3), or severe
+                                    (4).
+                                    <br><br>
+                                    Percentage of Participants Who Achieved PASI-75 Response at Week 48 Among PASI-75
+                                    Responders
+                                    at
+                                    Week 12 [ Time Frame: Week 48 ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 75
+                                    response was defined as at least a 75% reduction in PASI relative to baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved PASI-90 Response at Week 48 Among PASI-90
+                                    Responders
+                                    at
+                                    Week 16 [ Time Frame: Week 48 ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+                                    PASI 90
+                                    response was defined as at least a 90 percent (%) reduction in PASI relative to
+                                    baseline.
+                                    <br><br>
+                                    Percentage of Participants Who Achieved PASI Response (PASI 100, PASI-90, PASI-75
+                                    and
+                                    PASI-50)
+                                    Over Time From Week 1 to Week 56 [ Time Frame: Week 1, 2, 3, 4, 8, 12, 16, 20, 24,
+                                    28, 32,
+                                    36,
+                                    40, 44, 48, and 56 ]
+                                    <br>
+                                    PASI is a system used for assessing and grading the severity of psoriatic lesions
+                                    and their
+                                    response to therapy. In PASI system, body is divided into 4 regions: head, trunk,
+                                    upper
+                                    extremities, and lower extremities. Each of these areas is assessed separately for
+                                    the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90% to 100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. PASI produces a numeric score
+                                    that can
+                                    range
+                                    from 0 (no psoriasis) to 72.Participants with >=50%, >= 75%, >=90% and 100%
+                                    improvement in
+                                    PASI
+                                    from baseline were considered PASI 50, 75, 90 and PASI 100 responders, respectively.
+                                    <br><br>
+                                    Percentage of Participants With IGA Responses Through Week 56 [ Time Frame: Week 1,
+                                    2, 3, 4,
+                                    8,
+                                    12, 16, 20, 24, 28, 32, 36, 40, 44, 48, and 56 ]
+                                    <br>
+                                    The IGA documents the investigator's assessment of the participant's psoriasis at a
+                                    given
+                                    time
+                                    point. Overall lesions are graded for induration, erythema, and scaling. The
+                                    participant's
+                                    psoriasis is assessed as cleared (0), minimal (1), mild (2), moderate (3), or severe
+                                    (4).
+                                    <br><br>
+                                    Percent Improvement From Baseline in PASI Through Week 56 [ Time Frame: Week 1, 2,
+                                    3, 4, 8,
+                                    12,
+                                    16, 20, 24, 28, 32, 36, 40, 44, 48 and Week 56 ]
+                                    <br>
+                                    The PASI is a system used for assessing and grading the severity of psoriatic
+                                    lesions and
+                                    their
+                                    response to therapy. In the PASI system, the body is divided into 4 regions: the
+                                    head,
+                                    trunk,
+                                    upper extremities, and lower extremities. Each of these areas is assessed separately
+                                    for the
+                                    percentage of the area involved, which translates to a numeric score that ranges
+                                    from 0
+                                    (indicates no involvement) to 6 (90%-100% involvement), and for erythema,
+                                    induration, and
+                                    scaling, which are each rated on a scale of 0 to 4. The PASI produces a numeric
+                                    score that
+                                    could
+                                    range from 0 (no psoriasis) to 72. A higher score indicates more severe disease.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <p style="color:black;">
+                    <i class="bi bi-info-circle-fill"></i>
+                    The information discussed within the analyzed article was identified in further sources, prior to
+                    the date of publication from the article.
+                </p>
+                <!--
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>-->
+            </div>
         </div>
     </div>
 
