@@ -1197,17 +1197,44 @@
 
                             </div>
                             <div class="card-footer text-muted">
-                                Source Quality: &nbsp;
-                                <img src="Source Quality.png" class="img-fluid" alt="Responsive image"
-                                             style="max-width: 30%">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-11 text-center">
+                                        Source Quality: &nbsp;
+                                        <img src="Source Quality.png" class="img-fluid" alt="Responsive image"
+                                                style="max-width: 30%">
+                                    </div>
+                                    <div class="col-1 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The source quality represents the confidentiality of the sources over the last 6 months. The time restriction ensures that both negative and positive developments of news outlets are taken into account. The quality rating is based on the articles of an outlet analysed by the AI model so far. If 50% of articals from one outlet are identified as truthful, 1 badge is awarded. Furthermore, one badge is awarded for every 10% increment of truthful articles identified for an outlet.">
+                                            <i class="bi bi-info-lg"></i>
+                                        </button>
+                                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                        </svg>-->
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card mt-3 shadow-sm rounded">
                             <h6 class="card-header">
-                                AI Output&nbsp;&nbsp;   
-                                <img src="ampel_rot.png" class="img-fluid" alt="Responsive image"
-                                             style="max-width: 18%">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-11 text-center">
+                                        AI Output&nbsp;&nbsp;   
+                                        <img src="ampel_rot.png" class="img-fluid" alt="Responsive image"
+                                                style="max-width: 18%">
+                                    </div>
+                                    <div class="col-1 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="If the trailing AI model has a certainty of 75% or more, the traffic light is green (in case the item is truthful) or red (in case the item is untruthful). If the AI model reaches a probability of less than 75%, the traffic light changes to yellow to represent a certain level of uncertainty.">
+                                            <i class="bi bi-info-lg"></i>
+                                        </button>
+                                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                        </svg>-->
+                                    </div>
+                                    
+                                </div>
                             </h6>
                             <div class="card-body text-start" style="background-color:#f56eb1; border-radius: 0.25rem; border-top-left-radius: 0; border-top-right-radius: 0;">
                                 <div class="row">
@@ -1262,24 +1289,18 @@
 
                         <div class="card mt-3 shadow-sm bg-white rounded">
                             <h6 class="card-header">
-                                <div class="row">
-                                    <div class="col-9">
+                                <div class="row justify-content-between align-items-center"> <!-- This ensures alignment and distribution -->
+                                    <div class="col-11 text-center"> <!-- Adjusted for centering text -->
                                         Explanation for AI Output
                                     </div>
-
-                                    <div class="col-3">
-                                        <button type="button" class="btn btn-secondary" data-bs-placement="top"
-                                                title="The AI classified more text passages of the news article as untruthful and therefore came to this result. The explanation highlights words to visualize which of them were relevant for the classification into truthful or untruthful for the underlying AI.">
+                                    <div class="col-1 d-flex justify-content-end"> <!-- This ensures the button stays right aligned -->
+                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The AI classified more text passages of the news article as untruthful and therefore came to this result. The explanation highlights words to visualize which of them were relevant for the classification into truthful or untruthful for the underlying AI.">
                                             <i class="bi bi-info-lg"></i>
                                         </button>
-                                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                         class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                                        </svg>-->
                                     </div>
                                 </div>
-
                             </h6>
+                            
                             <div class="card-body text-start">
                                 <div class="row">
                                     <p class="text-start">
@@ -1307,14 +1328,13 @@
 
                         <div class="card mt-3 shadow-sm bg-white rounded">
                             <h6 class="card-header">
-                                <div class="row">
-                                    <div class="col-9">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-10 text-center">
                                         Traced Information and Sources
                                     </div>
 
-                                    <div class="col-3">
-                                        <button type="button" class="btn btn-secondary" data-bs-placement="top"
-                                                title="Traceability provides published information that was identified because it was discussed in the analyzed news article.">
+                                    <div class="col-1 d-flex justify-content-end">
+                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Traceability provides published information that was identified because it was discussed in the analyzed news article.">
                                             <i class="bi bi-info-lg"></i>
                                         </button>
                                         <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1367,5 +1387,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
 </body>
 </html>
