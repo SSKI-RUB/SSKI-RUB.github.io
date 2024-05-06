@@ -1204,7 +1204,13 @@
                                                 style="max-width: 30%">
                                     </div>
                                     <div class="col-1 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The source quality represents the confidentiality of the sources over the last 6 months. The time restriction ensures that both negative and positive developments of news outlets are taken into account. The quality rating is based on the articles of an outlet analysed by the AI model so far. If 50% of articals from one outlet are identified as truthful, 1 badge is awarded. Furthermore, one badge is awarded for every 10% increment of truthful articles identified for an outlet.">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-content="
+                                        1 Badge = 50% - 59% of articles from this source are truthfull <br><br>
+                                        2 Badges = 60% - 69% of articles from this source are truthfull <br><br>
+                                        3 Badges = 70% - 79% of articles from this source are truthfull <br><br>
+                                        4 Badges = 80% - 89% of articles from this source are truthfull <br><br>
+                                        5 Badges = 90% - 100% of articles from this source are truthfull 
+                                        " >
                                             <i class="bi bi-info-lg"></i>
                                         </button>
                                         <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1225,7 +1231,7 @@
                                                 style="max-width: 18%">
                                     </div>
                                     <div class="col-1 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="If the trailing AI model has a certainty of 75% or more, the traffic light is green (in case the item is truthful) or red (in case the item is untruthful). If the AI model reaches a probability of less than 75%, the traffic light changes to yellow to represent a certain level of uncertainty.">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true" data-bs-content="green = AI model is at least 75% certain that article is truthful <br><br> yellow = AI model is less than 75% certain that article is truthful <br><br> red = AI model is less than 25% certain that article is truthful">
                                             <i class="bi bi-info-lg"></i>
                                         </button>
                                         <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1294,7 +1300,7 @@
                                         Explanation for AI Output
                                     </div>
                                     <div class="col-1 d-flex justify-content-end"> <!-- This ensures the button stays right aligned -->
-                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="The AI classified more text passages of the news article as untruthful and therefore came to this result. The explanation highlights words to visualize which of them were relevant for the classification into truthful or untruthful for the underlying AI.">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-bs-container="body" data-bs-toggle="popover"data-bs-html="true" data-bs-placement="right" data-bs-content="The explanation highlights words to visualize which of them were relevant for the classification into truthful (green) or untruthful (red) for the underlying AI.">
                                             <i class="bi bi-info-lg"></i>
                                         </button>
                                     </div>
@@ -1302,7 +1308,7 @@
                             </h6>
                             
                             <div class="card-body text-start">
-                                <div class="row">
+                                <div class="row d-flex justify-content-center">
                                     <p class="text-start">
                                         With this feature you can open the explanation for the AI Output.
                                         <!--The AI classified more text passages of the news article as untruthful and
@@ -1314,14 +1320,14 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-2"></div>
-                                    <div class="col-8">
+                                    <!-- <div class="col-2"></div> -->
+                                    <div class="col-12 d-flex justify-content-center">
                                         <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop">
                                             Show Explanation
                                         </button>
                                     </div>
-                                    <div class="col-2"></div>
+                                    <!-- <div class="col-2"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -1329,12 +1335,12 @@
                         <div class="card mt-3 shadow-sm bg-white rounded">
                             <h6 class="card-header">
                                 <div class="row justify-content-between align-items-center">
-                                    <div class="col-10 text-center">
+                                    <div class="col-11 text-center">
                                         Traced Information and Sources
                                     </div>
 
                                     <div class="col-1 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Traceability provides published information that was identified because it was discussed in the analyzed news article.">
+                                        <button type="button" class="btn btn-secondary btn-sm" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Traceability provides published information that was identified because it was discussed in the analyzed news article.">
                                             <i class="bi bi-info-lg"></i>
                                         </button>
                                         <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1348,7 +1354,7 @@
                             </h6>
                             <div class="card-body text-start">
                                 <div class="row">
-                                    <p class="text-start">
+                                    <p class="text-start d-flex justify-content-center">
                                         With this feature you can open the traced information for this news article.
                                         <!--Traceability provides published information that was identified because it was
                                         discussed in the analyzed news article.-->
@@ -1356,14 +1362,14 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-2"></div>
-                                    <div class="col-8">
+                                    <!-- <div class="col-2"></div> -->
+                                    <div class="col-12 d-flex justify-content-center">
                                         <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                                 data-bs-target="#staticBackdrop1">
-                                            Show Tracability
+                                            Show Traceability
                                         </button>
                                     </div>
-                                    <div class="col-2"></div>
+                                    <!-- <div class="col-2"></div> -->
                                 </div>
                             </div>
                         </div>
